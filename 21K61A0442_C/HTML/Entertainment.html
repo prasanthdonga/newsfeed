@@ -1,0 +1,111 @@
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Entertainment</title>
+</head>
+<body>
+    <body>
+        <div>
+        <ul>
+            <div>
+            <li><a href="D:\\HTML\\Tamil.html">Tamil</a></li>
+        </div>
+            <div >
+            <li><a href="D:\\HTML\\Telugu.html">Telugu</a></li>
+        </div>
+            <div>
+            <li><a href="D:\\HTML\\Malayalam.html">Malayalam</a></li>
+        </div>
+        </ul>
+        
+    
+        
+    </body>
+    </html>-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Sports</title>
+        <style>
+           body{
+            background-image:url('bgi.jpg') ;
+        }
+        .centre{
+           text-align:center;
+            display: block;
+            margin: 0 auto;
+            width: 25%;
+            background-repeat: no-repeat;
+    background-size:cover;
+            background-color:rgba(0, 0, 0, 0.61);
+            color: rgba(222, 135, 154, 0.568);
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    min-height: 300px;
+   
+        }
+        
+        ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* Style the navbar */
+nav {
+    background-color: #333;
+    color: yellowgreen;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color:yellow;
+    font-weight: bold;
+}
+.logout {
+    float: right;
+}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Rishi.html">News</a></li>
+                <li><a href="https://www.sasi.ac.in//others//contact.html">Contact</a></li>
+                <li class="logout"><a href="https://chrome.google.com/webstore?hl=en">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="centre">
+        <h2>Select the topic Required</h2>
+        
+        <select id="destinationDropdown">
+            <option value="" disabled selected>Entertainment</option>
+            <option value="Tamil.html">Tamil</option>
+            <option value="Telugu.html">Telugu</option>
+            <option value="Malayalam.html">Malayalam</option>
+        </select>
+        
+        <p>More content follows after the dropdown.</p>
+    </div>
+    
+        <script>
+            document.getElementById("destinationDropdown").addEventListener("change", function() {
+                var selectedValue = this.value;
+                if (selectedValue !== "") {
+                    window.location.href = selectedValue;
+                }
+            });
+        </script>
+    </body>
+    </html>
